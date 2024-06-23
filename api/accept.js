@@ -1,5 +1,6 @@
 const crypto = require("crypto")
 const fs = require('fs')
+const path = require("path")
 module.exports = function(app){
     app.post("/accept", (req, res) => {
         const { body } = req
@@ -22,8 +23,10 @@ module.exports = function(app){
                 const item = unapprovedLibs.splice(index, 1)[0]
                 libs.push(item)
 
-                fs.writeFileSync("../unapprovedLibs.json", JSON.stringify(unapprovedLibs, null, 2))
-                fs.writeFileSync("../libs.json", JSON.stringify(libs, null, 2))
+                fs.writeFileSync(path.join(__dirname, "../unapprovedLibs.json"), JSON.stringify(unapprovedLibs, null, 2))
+                fs.writeFileSync(path.join(__dirname,"../libs.json"), JSON.stringify(libs, null, 2))
+
+                res.status(200).send("Added to libs.json")
             }
         }
     })
