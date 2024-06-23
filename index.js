@@ -16,3 +16,7 @@ fs.readdirSync(path.join(__dirname, 'api')).forEach(file => {
         require(`./api/${file}`)(app);
     }
 });
+
+const crypto = require("crypto")
+
+console.log(crypto.createHash("sha256").update("n$17HkFAH!YEBz9707l").digest("hex"))
