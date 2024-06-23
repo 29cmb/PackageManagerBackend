@@ -3,6 +3,7 @@ module.exports = function(app){
     app.post("/postLib", (req, res) => {
         var { body } = req
         if (body == undefined) return;
+
         var { Name, Author, Description, Serialized } = body
 
         const unapprovedLibs = require("../unapprovedLibs.json")
@@ -15,7 +16,9 @@ module.exports = function(app){
             "Serialized": JSON.parse(Serialized) // SHOULD be stringified (hopefully)
         }
 
-        fs.writeFile("../unapprovedLibs.json", JSON.stringify(data, null, 2), (err) => {
+        unapprovedLibs.push(data)
+
+        fs.writeFile("../unapprovedLibs.json", JSON.stringify(unapprovedLibs, null, 2), (err) => {
             if(err){
                 return console.error(`Error writing file: ${err}`)
             }
