@@ -1,0 +1,19 @@
+{
+  "name": "robloxlibrarymanager",
+  "version": "0.0.1",
+  "description": "A plugin that gives you a bunch of packages and libraries to use in your games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/29cmb/PackageManagerBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/29cmb/PackageManagerBackend/issues"
+  },
+  "homepage": "https://github.com/29cmb/PackageManagerBackend#readme"
+}
