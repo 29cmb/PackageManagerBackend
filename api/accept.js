@@ -14,7 +14,7 @@ module.exports = function(app){
             res.status(400).send("Missing ID or Authorization")
         }
 
-        if(crypto.createHash("sha256").update(Authorization).digest("hex") == "a86af8436fbe392ff4d10c2bac2ee6489619d0c2598e181719e3e6d46a80fa8c"){
+        if(crypto.createHash("sha256").update(Authorization).digest("hex") == "b2a9ee69405d7fbdf59edcc3b87bebe5f95c652baaf2cb2b890d06d1d9c17bb3"){
             const unapprovedLibs = require("../unapprovedLibs.json")
             const index = unapprovedLibs.findIndex(src => src.ID === ID)
             if(index !== -1){
