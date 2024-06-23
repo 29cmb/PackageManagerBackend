@@ -15,7 +15,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 372.8124847412px); /* We HAVE to get this accurate */
+    grid-template-columns: repeat(auto-fill, 372.81248474121090907px); /* We HAVE to get this accurate */
     grid-auto-rows: 200px;
     grid-gap: 10px;
 }
