@@ -9,6 +9,18 @@ body {
     color: #fff
 }
 
-h1,h2,p {
+.title {
     text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 372.8124847412px); /* We HAVE to get this accurate */
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+}
+
+.Library {
+    border-style: solid;
+    padding-left: 20px;
 }
