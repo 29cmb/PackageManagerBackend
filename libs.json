@@ -1,15 +1,17 @@
 [
     {
-        "ID": 1,
+        "ID": "7SDfd9NDSa9DN72dan6Nao9",
         "Name": "Thing",
+        "Author": "DevCmb",
         "Description": "A thing which does something ig",
-        "Icon": null,
+        "Downloads": 0,
         "Serialized": [
             {
                 "Archivable": true,
                 "Name": "PackageThing",
                 "Source": "return nil",
-                "ClassName": "ModuleScript"
+                "ClassName": "ModuleScript",
+                "Children": {}
             }
         ]
     }
