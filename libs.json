@@ -1,0 +1,16 @@
+[
+    {
+        "ID": 1,
+        "Name": "Thing",
+        "Description": "A thing which does something ig",
+        "Icon": null,
+        "Serialized": [
+            {
+                "Archivable": true,
+                "Name": "PackageThing",
+                "Source": "return nil",
+                "ClassName": "ModuleScript"
+            }
+        ]
+    }
+]
