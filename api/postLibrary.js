@@ -44,6 +44,8 @@ module.exports = function(app){
             res.status(200).send(`Package '${Name}' added successfully`);
         });
     });
+
+    console.log("✅ | [API] `/postLib` has been set up")
 }
 
 // Function to generate a random ID

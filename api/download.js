@@ -28,4 +28,6 @@ module.exports = function(app){
 
         res.send(item.Serialized)
     })
+
+    console.log("✅ | [API] `/download` has been set up")
 }

@@ -7,7 +7,7 @@ require("dotenv").config()
 app.use(express.json())
 
 app.listen(3000, () => {
-    console.log("Backend ready")
+    console.log("👍 API is listening")
 })
 
 // API Routes

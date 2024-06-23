@@ -30,4 +30,6 @@ module.exports = function(app){
             }
         }
     })
+
+    console.log("✅ | [API] `/accept` has been set up")
 }
