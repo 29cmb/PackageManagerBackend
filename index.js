@@ -6,7 +6,7 @@ const fs = require('fs')
 require("dotenv").config()
 app.use(express.json())
 
-app.listen(process.env.PORT, () => {
+app.listen(3000, () => {
     console.log("Backend ready")
 })
 
