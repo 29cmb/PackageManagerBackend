@@ -1,8 +1,8 @@
 const path = require("path")
 module.exports = function(app){
-    app.get("/libs", (req, res) => {
+    app.get("/unapprovedLibs", (req, res) => {
         res.send(require(path.join(__dirname, "/../unapprovedLibs.json")))
     })
 
-    console.log("✅ | [API] `/libs` has been set up")
+    console.log("✅ | [API] `/unapprovedLibs` has been set up")
 }
