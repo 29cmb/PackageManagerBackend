@@ -22,7 +22,7 @@ function load(){
             buttonElement.id = 'Install';
             buttonElement.innerHTML = "Install";
             buttonElement.onclick = function(){
-                buttonElement.innerHTML = `Enter ID ${library.ID} in the <a href="https://example.com">roblox plugin</a> to install`
+                buttonElement.innerHTML = `Enter ID ${library.ID} in the <a href="https://create.roblox.com/store/asset/18191144981">roblox plugin</a> to install`
             }
 
             libraryDiv.appendChild(titleElement);
