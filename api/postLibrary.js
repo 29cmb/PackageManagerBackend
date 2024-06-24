@@ -17,6 +17,10 @@ module.exports = function(app){
             return
         }
 
+        if(Description.length > 125){
+            Description = Description.substring(0, 125)
+        }
+
         const filePath = path.join(__dirname, '../unapprovedLibs.json');
         let unapprovedLibs = require(filePath);
         
