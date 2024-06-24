@@ -4,7 +4,9 @@ const path = require('path')
 const fs = require('fs')
 
 require("dotenv").config()
-app.use(express.json())
+app.use(express.json({ limit: '75mb' }));
+app.use(express.urlencoded({ limit: '75mb', extended: true }));
+
 app.use(express.static(path.join(__dirname, "views")));
 
 app.listen(3000, () => {
