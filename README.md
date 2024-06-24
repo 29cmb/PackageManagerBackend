@@ -1,5 +1,5 @@
 # Roblox Library Manager Backend Server
-The companion app for [the manager plugin](https://github.com/29cmb/PackageManagerPlugin)
+The companion app for [the manager plugin](https://github.com/29cmb/PackageManagerPlugin) (Get the plugin [here!](https://create.roblox.com/store/asset/18191144981))
 
 You can both view libraries and send an ID to studio to import them.
 
