@@ -28,4 +28,4 @@ Only used for the get by ID button
 `ID`: Package ID
 
 ### `GET /unapprovedLibs`
-Returns the unapprovedLibs.json file, viit at your own risk of malicious code.
+Returns the unapprovedLibs.json file, visit at your own risk of malicious code.
